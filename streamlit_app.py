@@ -23,8 +23,8 @@ if(streamlit.button('Add a fruit to the List')):
     
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
-            my_cur.execute("select * from fruit_load_list")
-            return my_cur.fetchall()
+        my_cur.execute("select * from fruit_load_list")
+        return my_cur.fetchall()
   
 
 streamlit.header("View our fruit list - add your favorites!")
